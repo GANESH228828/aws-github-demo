@@ -22,6 +22,6 @@ jobs:
 
       - name: Deploy to S3 Bucket
         run: |
-          aws s3 sync . s3://your-bucket-name --delete \
+          aws s3 sync . s3://marketing-ui-bucket --delete \
             --exclude ".git/*" \
             --exclude ".github/*"
